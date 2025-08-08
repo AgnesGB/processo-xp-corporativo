@@ -1,6 +1,6 @@
 # Processo XP Corporativo
 
-Este repositório contém o código-fonte do site que documenta o **Processo XP Corporativo**, um processo ágil baseado em Extreme Programming (XP) desenvolvido especificamente para a disciplina de Processo de Software Corporativo.
+Este repositório contém o código-fonte do site que documenta o **Processo XP Corporativo**, um processo ágil baseado em Extreme Programming (XP) desenvolvido especificamente para a disciplina de Processo de Software.
 
 ## 🚀 Acesso ao Site
 
@@ -169,7 +169,7 @@ O processo inclui 4 métricas principais:
 - **Cobertura de Testes**: Percentual do código testado
 - **Satisfação do Cliente**: Avaliação das entregas
 
-## 🎯 Aplicação em Processo de Software Corporativo
+## 🎯 Aplicação em Processo de Software
 
 Este processo foi desenvolvido especificamente para:
 

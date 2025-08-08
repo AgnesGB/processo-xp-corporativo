@@ -1,6 +1,6 @@
 # Processo XP Corporativo
 
-Site com documentação completa do processo ágil baseado em Extreme Programming para Processo de Software Corporativo.
+Site com documentação completa do processo ágil baseado em Extreme Programming para Processo de Software.
 
 ## Visite o site: [Processo XP Corporativo](https://agnesgb.github.io/processo-xp-corporativo/)
 
