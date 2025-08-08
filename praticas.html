@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práticas Ágeis - XP Corporativo</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code-branch"></i>
+                XP Corporativo
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="diagrama.html" class="nav-link">Diagrama</a>
+                </li>
+                <li class="nav-item">
+                    <a href="atividades.html" class="nav-link">Atividades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="papeis.html" class="nav-link">Papéis</a>
+                </li>
+                <li class="nav-item">
+                    <a href="praticas.html" class="nav-link active">Práticas</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1><i class="fas fa-cogs"></i> Práticas Ágeis XP</h1>
+                <p class="hero-subtitle">Práticas fundamentais do Extreme Programming aplicadas ao contexto corporativo</p>
+            </div>
+        </section>
+
+        <section class="practices-section">
+            <div class="container">
+                <div class="intro-text">
+                    <p>O Extreme Programming (XP) define 12 práticas fundamentais que garantem qualidade técnica, comunicação efetiva e entrega contínua de valor. Estas práticas são aplicadas em diferentes fases do nosso processo.</p>
+                </div>
+
+                <!-- Filtros de Práticas -->
+                <div class="practice-filters">
+                    <button class="filter-btn active" data-filter="all">Todas as Práticas</button>
+                    <button class="filter-btn" data-filter="planejamento">Planejamento</button>
+                    <button class="filter-btn" data-filter="desenvolvimento">Desenvolvimento</button>
+                    <button class="filter-btn" data-filter="testes">Testes</button>
+                    <button class="filter-btn" data-filter="gerencia">Gerência</button>
+                </div>
+
+                <!-- Práticas de Planejamento -->
+                <div class="practice-category planejamento">
+                    <h3><i class="fas fa-clipboard-list"></i> Práticas de Planejamento</h3>
+                    
+                    <div class="practices-grid">
+                        <div class="practice-item">
+                            <h4>Planning Game</h4>
+                            <p>Processo colaborativo de planejamento onde cliente e desenvolvedores determinam o escopo de releases e iterações.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Alinhamento entre expectativas técnicas e de negócio</li>
+                                    <li>Priorização baseada em valor real</li>
+                                    <li>Planejamento realista e flexível</li>
+                                    <li>Comunicação constante sobre progresso</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Como aplicar:</strong>
+                                <p>Realize sessões de 2-4 horas por iteração com Customer e Developers, usando técnicas como Planning Poker para estimativas.</p>
+                            </div>
+                        </div>
+
+                        <div class="practice-item">
+                            <h4>User Stories</h4>
+                            <p>Descrição de funcionalidades do ponto de vista do usuário, focando no valor entregue e não na implementação técnica.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Foco no valor para o usuário final</li>
+                                    <li>Comunicação clara de requisitos</li>
+                                    <li>Facilita priorização e estimativas</li>
+                                    <li>Base para testes de aceitação</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Formato padrão:</strong>
+                                <p>"Como [tipo de usuário], eu quero [funcionalidade] para que [benefício]"</p>
+                            </div>
+                        </div>
+
+                        <div class="practice-item">
+                            <h4>Small Releases</h4>
+                            <p>Entregas frequentes de software funcionando em pequenos incrementos, tipicamente a cada 1-2 semanas.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Feedback rápido do cliente</li>
+                                    <li>Redução de riscos</li>
+                                    <li>Demonstração contínua de progresso</li>
+                                    <li>Ajustes rápidos de direção</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Meta:</strong>
+                                <p>Cada release deve conter 1-3 histórias de usuário completas e demonstráveis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Práticas de Desenvolvimento -->
+                <div class="practice-category desenvolvimento">
+                    <h3><i class="fas fa-code"></i> Práticas de Desenvolvimento</h3>
+                    
+                    <div class="practices-grid">
+                        <div class="practice-item">
+                            <h4>Pair Programming</h4>
+                            <p>Duas pessoas trabalhando no mesmo código simultaneamente, uma como "driver" (digitando) e outra como "navigator" (revisando).</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Qualidade de código superior</li>
+                                    <li>Compartilhamento de conhecimento</li>
+                                    <li>Redução de defeitos</li>
+                                    <li>Mentoria contínua</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Rotação:</strong>
+                                <p>Alterne pares diariamente e troque papéis driver/navigator a cada 15-30 minutos.</p>
+                            </div>
+                        </div>
+
+                        <div class="practice-item">
+                            <h4>Test-Driven Development (TDD)</h4>
+                            <p>Prática de escrever testes antes do código de produção, seguindo o ciclo Red-Green-Refactor.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Design emergente e limpo</li>
+                                    <li>Cobertura de testes natural</li>
+                                    <li>Confiança para refatorar</li>
+                                    <li>Documentação viva do código</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Ciclo TDD:</strong>
+                                <p>1. Escreva um teste que falhe (Red) → 2. Implemente o mínimo para passar (Green) → 3. Refatore (Refactor)</p>
+                            </div>
+                        </div>
+
+                        <div class="practice-item">
+                            <h4>Refactoring</h4>
+                            <p>Melhoria contínua da estrutura interna do código sem alterar seu comportamento externo.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Código mais limpo e maintível</li>
+                                    <li>Redução de dívida técnica</li>
+                                    <li>Facilita futuras mudanças</li>
+                                    <li>Melhora legibilidade</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Quando refatorar:</strong>
+                                <p>Sempre que você vê código duplicado, métodos muito longos, ou quando adicionar nova funcionalidade é difícil.</p>
+                            </div>
+                        </div>
+
+                        <div class="practice-item">
+                            <h4>Simple Design</h4>
+                            <p>Manter o design do sistema o mais simples possível, implementando apenas o que é necessário agora.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Desenvolvimento mais rápido</li>
+                                    <li>Menos complexidade</li>
+                                    <li>Facilita mudanças</li>
+                                    <li>Reduz over-engineering</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Princípios:</strong>
+                                <p>1. Passa todos os testes → 2. Não tem duplicação → 3. Expressa intenção → 4. Mínimo de classes/métodos</p>
+                            </div>
+                        </div>
+
+                        <div class="practice-item">
+                            <h4>Collective Code Ownership</h4>
+                            <p>Todos os desenvolvedores têm responsabilidade sobre todo o código do sistema.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Conhecimento distribuído</li>
+                                    <li>Reduz gargalos</li>
+                                    <li>Melhoria contínua do código</li>
+                                    <li>Responsabilidade coletiva</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Como implementar:</strong>
+                                <p>Qualquer desenvolvedor pode modificar qualquer código, mas sempre com pair programming ou revisão.</p>
+                            </div>
+                        </div>
+
+                        <div class="practice-item">
+                            <h4>Coding Standards</h4>
+                            <p>Convenções de codificação consistentes em toda a equipe para facilitar compreensão e manutenção.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Código uniforme e legível</li>
+                                    <li>Facilita pair programming</li>
+                                    <li>Reduz tempo de compreensão</li>
+                                    <li>Melhora qualidade geral</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Elementos:</strong>
+                                <p>Nomenclatura, formatação, estrutura de arquivos, comentários e documentação inline.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Práticas de Testes -->
+                <div class="practice-category testes">
+                    <h3><i class="fas fa-vial"></i> Práticas de Testes</h3>
+                    
+                    <div class="practices-grid">
+                        <div class="practice-item">
+                            <h4>Acceptance Tests</h4>
+                            <p>Testes automatizados que verificam se o sistema atende aos critérios de aceitação definidos pelo cliente.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Validação automática de requisitos</li>
+                                    <li>Documentação executável</li>
+                                    <li>Confiança nas entregas</li>
+                                    <li>Comunicação clara de expectativas</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Ferramenta sugerida:</strong>
+                                <p>Use frameworks como Cucumber, Selenium ou Jest para automatizar cenários de aceitação.</p>
+                            </div>
+                        </div>
+
+                        <div class="practice-item">
+                            <h4>Continuous Integration</h4>
+                            <p>Integração frequente do código da equipe com execução automática de testes e verificações de qualidade.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Detecção precoce de problemas</li>
+                                    <li>Código sempre integrado</li>
+                                    <li>Feedback rápido</li>
+                                    <li>Reduz riscos de integração</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Regra de ouro:</strong>
+                                <p>Nunca deixe o build quebrado por mais de 10 minutos. Se quebrar, pare tudo e conserte.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Práticas de Gerência -->
+                <div class="practice-category gerencia">
+                    <h3><i class="fas fa-users-cog"></i> Práticas de Gerência</h3>
+                    
+                    <div class="practices-grid">
+                        <div class="practice-item">
+                            <h4>On-site Customer</h4>
+                            <p>Cliente disponível em tempo integral para a equipe, esclarecendo dúvidas e fornecendo feedback imediato.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Feedback imediato</li>
+                                    <li>Decisões rápidas</li>
+                                    <li>Reduz mal-entendidos</li>
+                                    <li>Priorização dinâmica</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Adaptação:</strong>
+                                <p>No contexto acadêmico, pode ser o professor, cliente real ou proxy representando stakeholders.</p>
+                            </div>
+                        </div>
+
+                        <div class="practice-item">
+                            <h4>Sustainable Pace</h4>
+                            <p>Manter ritmo de trabalho sustentável, evitando burnout e mantendo qualidade consistente.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Qualidade consistente</li>
+                                    <li>Evita burnout</li>
+                                    <li>Produtividade sustentável</li>
+                                    <li>Melhor moral da equipe</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Meta:</strong>
+                                <p>40 horas por semana é o máximo. Horas extras devem ser exceção, não regra.</p>
+                            </div>
+                        </div>
+
+                        <div class="practice-item">
+                            <h4>Metaphor</h4>
+                            <p>Visão compartilhada do sistema através de uma metáfora que todos entendem, facilitando comunicação.</p>
+                            
+                            <div class="practice-benefits">
+                                <strong>Benefícios:</strong>
+                                <ul>
+                                    <li>Comunicação efetiva</li>
+                                    <li>Visão arquitetural comum</li>
+                                    <li>Facilita design decisions</li>
+                                    <li>Nomenclatura consistente</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="practice-application">
+                                <strong>Exemplo:</strong>
+                                <p>Sistema de e-commerce como "loja virtual" - com carrinho, caixa, estoque, vendedor, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Matriz de Práticas por Fase -->
+                <div class="practices-matrix">
+                    <h3><i class="fas fa-table"></i> Matriz de Práticas por Fase</h3>
+                    
+                    <div class="matrix-container">
+                        <table class="practices-phase-matrix">
+                            <thead>
+                                <tr>
+                                    <th>Prática XP</th>
+                                    <th>Planejamento</th>
+                                    <th>Desenvolvimento</th>
+                                    <th>Testes</th>
+                                    <th>Implantação</th>
+                                    <th>Reflexão</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Planning Game</td>
+                                    <td class="primary">●</td>
+                                    <td class="secondary">○</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="secondary">○</td>
+                                </tr>
+                                <tr>
+                                    <td>User Stories</td>
+                                    <td class="primary">●</td>
+                                    <td class="secondary">○</td>
+                                    <td class="secondary">○</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Small Releases</td>
+                                    <td class="secondary">○</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="primary">●</td>
+                                    <td class="secondary">○</td>
+                                </tr>
+                                <tr>
+                                    <td>Pair Programming</td>
+                                    <td></td>
+                                    <td class="primary">●</td>
+                                    <td class="secondary">○</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>TDD</td>
+                                    <td></td>
+                                    <td class="primary">●</td>
+                                    <td class="primary">●</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Refactoring</td>
+                                    <td></td>
+                                    <td class="primary">●</td>
+                                    <td class="secondary">○</td>
+                                    <td></td>
+                                    <td class="secondary">○</td>
+                                </tr>
+                                <tr>
+                                    <td>Simple Design</td>
+                                    <td class="secondary">○</td>
+                                    <td class="primary">●</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="secondary">○</td>
+                                </tr>
+                                <tr>
+                                    <td>Collective Ownership</td>
+                                    <td></td>
+                                    <td class="primary">●</td>
+                                    <td class="secondary">○</td>
+                                    <td class="secondary">○</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Coding Standards</td>
+                                    <td class="secondary">○</td>
+                                    <td class="primary">●</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="secondary">○</td>
+                                </tr>
+                                <tr>
+                                    <td>Acceptance Tests</td>
+                                    <td class="secondary">○</td>
+                                    <td class="secondary">○</td>
+                                    <td class="primary">●</td>
+                                    <td class="secondary">○</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Continuous Integration</td>
+                                    <td></td>
+                                    <td class="primary">●</td>
+                                    <td class="primary">●</td>
+                                    <td class="primary">●</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>On-site Customer</td>
+                                    <td class="primary">●</td>
+                                    <td class="secondary">○</td>
+                                    <td class="primary">●</td>
+                                    <td class="primary">●</td>
+                                    <td class="secondary">○</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="matrix-legend">
+                            <span><strong>●</strong> Prática principal</span>
+                            <span><strong>○</strong> Prática de apoio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guia de Implementação -->
+                <div class="implementation-guide">
+                    <h3><i class="fas fa-route"></i> Guia de Implementação por Iteração</h3>
+                    
+                    <div class="implementation-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">1</div>
+                            <div class="timeline-content">
+                                <h4>Primeira Iteração</h4>
+                                <p><strong>Foque em:</strong> Planning Game, User Stories, Simple Design, Coding Standards</p>
+                                <p>Estabeleça a base do processo e acerte as práticas fundamentais antes de avançar.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">2</div>
+                            <div class="timeline-content">
+                                <h4>Segunda Iteração</h4>
+                                <p><strong>Adicione:</strong> Pair Programming, TDD básico, Small Releases</p>
+                                <p>Introduza práticas de desenvolvimento colaborativo e comece com testes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">3</div>
+                            <div class="timeline-content">
+                                <h4>Terceira Iteração</h4>
+                                <p><strong>Aprimore:</strong> TDD avançado, Refactoring, Acceptance Tests</p>
+                                <p>Refine as práticas técnicas e introduza testes de aceitação automatizados.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">4+</div>
+                            <div class="timeline-content">
+                                <h4>Iterações Seguintes</h4>
+                                <p><strong>Domine:</strong> Continuous Integration, Collective Ownership, Sustainable Pace</p>
+                                <p>Integre todas as práticas e foque na melhoria contínua do processo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Checklist de Práticas -->
+                <div class="practices-checklist">
+                    <h3><i class="fas fa-check-square"></i> Checklist de Verificação</h3>
+                    
+                    <div class="checklist-sections">
+                        <div class="checklist-section">
+                            <h4>Planejamento</h4>
+                            <ul class="checklist">
+                                <li>□ Histórias escritas no formato padrão</li>
+                                <li>□ Estimativas feitas pela equipe toda</li>
+                                <li>□ Priorização clara do cliente</li>
+                                <li>□ Planning game realizado</li>
+                                <li>□ Release pequena definida</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="checklist-section">
+                            <h4>Desenvolvimento</h4>
+                            <ul class="checklist">
+                                <li>□ Pair programming sendo praticado</li>
+                                <li>□ TDD sendo seguido</li>
+                                <li>□ Refatoração contínua</li>
+                                <li>□ Design simples mantido</li>
+                                <li>□ Padrões de código seguidos</li>
+                                <li>□ Propriedade coletiva do código</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="checklist-section">
+                            <h4>Testes</h4>
+                            <ul class="checklist">
+                                <li>□ Testes unitários passando</li>
+                                <li>□ Testes de aceitação definidos</li>
+                                <li>□ Integração contínua funcionando</li>
+                                <li>□ Cobertura de testes adequada</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="checklist-section">
+                            <h4>Gerência</h4>
+                            <ul class="checklist">
+                                <li>□ Cliente disponível para equipe</li>
+                                <li>□ Ritmo sustentável mantido</li>
+                                <li>□ Metáfora do sistema clara</li>
+                                <li>□ Comunicação efetiva</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Contexto Acadêmico</h3>
+                    <p>Desenvolvido para a disciplina de Processo de Desenvolvimento de Software</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-code"></i> Tecnologias</h3>
+                    <p>HTML5, CSS3, JavaScript e GitHub Pages</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-calendar"></i> Ano</h3>
+                    <p>2025</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Processo XP Corporativo - PDS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

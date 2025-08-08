@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades do Processo - XP Corporativo</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code-branch"></i>
+                XP Corporativo
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="diagrama.html" class="nav-link">Diagrama</a>
+                </li>
+                <li class="nav-item">
+                    <a href="atividades.html" class="nav-link active">Atividades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="papeis.html" class="nav-link">Papéis</a>
+                </li>
+                <li class="nav-item">
+                    <a href="praticas.html" class="nav-link">Práticas</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1><i class="fas fa-tasks"></i> Atividades do Processo XP</h1>
+                <p class="hero-subtitle">Descrição detalhada de cada atividade do processo</p>
+            </div>
+        </section>
+
+        <section class="activities-section">
+            <div class="container">
+                <div class="intro-text">
+                    <p>O Processo XP Corporativo é composto por 20 atividades principais distribuídas em 5 fases. Cada atividade tem objetivos específicos, entradas, saídas e práticas recomendadas.</p>
+                </div>
+
+                <!-- Fase 1: Planejamento -->
+                <div class="activity-section">
+                    <h3><i class="fas fa-clipboard-list"></i> Fase 1: Planejamento</h3>
+                    
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <h4>1.1 Coleta de Histórias de Usuário</h4>
+                            <p>Identificação e documentação dos requisitos do sistema na forma de histórias de usuário, priorizando a perspectiva do usuário final.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Customer (principal), Coach, Developers
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Visão do produto, requisitos de stakeholders
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Backlog de histórias de usuário
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    2-4 horas por iteração
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>1.2 Estimativa e Priorização</h4>
+                            <p>Avaliação do esforço necessário para implementar cada história e definição da ordem de desenvolvimento baseada em valor de negócio.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers (estimativa), Customer (priorização)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Backlog de histórias de usuário
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Histórias estimadas e priorizadas
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    1-2 horas por iteração
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>1.3 Definição de Tarefas</h4>
+                            <p>Decomposição das histórias selecionadas em tarefas técnicas específicas e detalhadas para facilitar a implementação.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers (principal), Coach
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Histórias priorizadas para a iteração
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Plano de tarefas da iteração
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    1-2 horas por iteração
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>1.4 Planejamento da Release</h4>
+                            <p>Definição do escopo e cronograma macro do projeto, estabelecendo marcos e entregas principais.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Customer, Coach, Developers
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Backlog completo, velocidade estimada
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Plano de release, cronograma macro
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    4-8 horas (início do projeto)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 2: Desenvolvimento -->
+                <div class="activity-section">
+                    <h3><i class="fas fa-code"></i> Fase 2: Desenvolvimento</h3>
+                    
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <h4>2.1 Pair Programming</h4>
+                            <p>Desenvolvimento colaborativo onde duas pessoas trabalham juntas em um mesmo computador, uma digitando e outra revisando continuamente.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers (em pares)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Tarefas definidas, testes escritos
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Código implementado e revisado
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    60-70% do tempo de desenvolvimento
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>2.2 Test-Driven Development (TDD)</h4>
+                            <p>Prática de escrever testes antes da implementação, garantindo que o código atenda aos requisitos desde o início.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Critérios de aceitação, especificações
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Testes automatizados, código testado
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    Paralelo ao desenvolvimento
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>2.3 Integração Contínua</h4>
+                            <p>Processo automatizado de integração frequente do código da equipe, com execução de testes e verificação de qualidade.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers, Coach (configuração)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Código commitado, testes automatizados
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Build integrado, relatório de testes
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    Contínuo (a cada commit)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>2.4 Refatoração</h4>
+                            <p>Melhoria contínua da estrutura interna do código sem alterar seu comportamento externo, mantendo a qualidade técnica.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Código existente, métricas de qualidade
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Código refatorado, testes atualizados
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    10-20% do tempo de desenvolvimento
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 3: Testes -->
+                <div class="activity-section">
+                    <h3><i class="fas fa-vial"></i> Fase 3: Testes</h3>
+                    
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <h4>3.1 Testes de Unidade</h4>
+                            <p>Testes automatizados que verificam o funcionamento correto de unidades individuais de código (métodos, classes).</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Código implementado, especificações
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Suite de testes de unidade
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    Paralelo ao desenvolvimento
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>3.2 Testes de Aceitação</h4>
+                            <p>Testes que verificam se as funcionalidades implementadas atendem aos critérios de aceitação definidos pelo cliente.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Customer (principal), Developers
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Funcionalidades implementadas
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Relatório de aceitação
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    1-2 horas por história
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>3.3 Testes de Integração</h4>
+                            <p>Verificação do funcionamento correto da comunicação entre diferentes componentes ou módulos do sistema.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Módulos integrados, interfaces
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Testes de integração automatizados
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    2-4 horas por iteração
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>3.4 Testes de Sistema</h4>
+                            <p>Testes que verificam o comportamento do sistema completo em um ambiente similar ao de produção.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers, Customer
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Sistema integrado, cenários de uso
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Relatório de testes de sistema
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    4-6 horas por iteração
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 4: Implantação -->
+                <div class="activity-section">
+                    <h3><i class="fas fa-rocket"></i> Fase 4: Implantação</h3>
+                    
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <h4>4.1 Deploy Contínuo</h4>
+                            <p>Processo automatizado de implantação do software em ambiente de produção ou demonstração.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers, Coach
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Código testado, pipeline de deploy
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Sistema em produção
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    30 minutos - 2 horas
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>4.2 Demonstração ao Cliente</h4>
+                            <p>Apresentação das funcionalidades implementadas na iteração para o cliente e stakeholders.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers, Customer, Coach
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Funcionalidades implementadas
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Feedback do cliente, novos requisitos
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    1-2 horas por iteração
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>4.3 Coleta de Feedback</h4>
+                            <p>Obtenção e documentação do feedback do cliente sobre as funcionalidades entregues.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Customer, Coach
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Demonstração, interação com cliente
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Relatório de feedback, melhorias
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    30 minutos - 1 hora
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>4.4 Monitoramento Pós-Deploy</h4>
+                            <p>Acompanhamento do sistema após a implantação para identificar problemas e medir desempenho.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Developers, Coach
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Sistema em produção, métricas
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Relatório de monitoramento
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    Contínuo (primeira semana crítica)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 5: Reflexão -->
+                <div class="activity-section">
+                    <h3><i class="fas fa-thought-bubble"></i> Fase 5: Reflexão</h3>
+                    
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <h4>5.1 Retrospectiva da Iteração</h4>
+                            <p>Reunião da equipe para refletir sobre o que funcionou bem, o que pode ser melhorado e quais ações tomar.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Toda a equipe (Coach facilita)
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Experiências da iteração
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Plano de melhorias
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    1-2 horas por iteração
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>5.2 Análise de Métricas</h4>
+                            <p>Avaliação dos indicadores de desempenho da equipe e do processo para identificar tendências e oportunidades.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Coach, Developers
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Métricas coletadas, dados históricos
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Relatório de métricas, insights
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    30 minutos - 1 hora
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>5.3 Planejamento de Melhorias</h4>
+                            <p>Definição de ações concretas para implementar as melhorias identificadas na retrospectiva.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Coach, toda a equipe
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Resultado da retrospectiva
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Plano de ação, compromissos
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    30 minutos - 1 hora
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>5.4 Atualização do Processo</h4>
+                            <p>Modificação das práticas e procedimentos da equipe baseada nos aprendizados e melhorias identificados.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Coach, toda a equipe
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Plano de melhorias aprovado
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Processo atualizado, novas práticas
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    Conforme necessário
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Atividades de Gerência -->
+                <div class="activity-section">
+                    <h3><i class="fas fa-users-cog"></i> Atividades de Gerência (Contínuas)</h3>
+                    
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <h4>G.1 Monitoramento do Progresso</h4>
+                            <p>Acompanhamento contínuo do andamento do projeto, identificando desvios e riscos.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Coach (principal), Customer
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Métricas, status das tarefas
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Relatórios de progresso, alertas
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    Diário (15-30 minutos)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>G.2 Gestão de Riscos</h4>
+                            <p>Identificação, avaliação e mitigação de riscos que podem impactar o projeto.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Coach, toda a equipe
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Situação atual, problemas identificados
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Plano de mitigação de riscos
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    1 hora por semana
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>G.3 Comunicação com Stakeholders</h4>
+                            <p>Manutenção da comunicação regular com todos os interessados no projeto.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Customer, Coach
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Status do projeto, feedback
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Relatórios, apresentações
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    2-4 horas por iteração
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <h4>G.4 Controle de Qualidade</h4>
+                            <p>Garantia de que os padrões de qualidade estabelecidos estão sendo seguidos.</p>
+                            
+                            <div class="activity-details">
+                                <div class="detail-item">
+                                    <strong>Responsáveis:</strong>
+                                    Coach, Developers
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Entradas:</strong>
+                                    Código, testes, métricas de qualidade
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Saídas:</strong>
+                                    Relatórios de qualidade, ações corretivas
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Duração:</strong>
+                                    Contínuo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Contexto Acadêmico</h3>
+                    <p>Desenvolvido para a disciplina de Processo de Desenvolvimento de Software</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-code"></i> Tecnologias</h3>
+                    <p>HTML5, CSS3, JavaScript e GitHub Pages</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-calendar"></i> Ano</h3>
+                    <p>2025</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Processo XP Corporativo - PDS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

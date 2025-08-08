@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papéis do Processo - XP Corporativo</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code-branch"></i>
+                XP Corporativo
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="diagrama.html" class="nav-link">Diagrama</a>
+                </li>
+                <li class="nav-item">
+                    <a href="atividades.html" class="nav-link">Atividades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="papeis.html" class="nav-link active">Papéis</a>
+                </li>
+                <li class="nav-item">
+                    <a href="praticas.html" class="nav-link">Práticas</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1><i class="fas fa-users-cog"></i> Papéis do Processo XP</h1>
+                <p class="hero-subtitle">Responsabilidades e competências de cada papel na equipe</p>
+            </div>
+        </section>
+
+        <section class="roles-section">
+            <div class="container">
+                <div class="intro-text">
+                    <p>O Processo XP Corporativo define 3 papéis principais que trabalham colaborativamente para entregar software de qualidade. Cada papel tem responsabilidades específicas e contribui de forma única para o sucesso do projeto.</p>
+                </div>
+
+                <!-- Calculator de distribuição de papéis -->
+                <div class="team-calculator" id="team-calculator">
+                    <h3><i class="fas fa-calculator"></i> Calculadora de Distribuição de Papéis</h3>
+                    <div class="calculator-content">
+                        <div class="input-group">
+                            <label for="team-size">Tamanho da equipe:</label>
+                            <input type="number" id="team-size" min="2" max="20" value="5">
+                            <button id="calculate-roles" class="btn btn-primary">Calcular Distribuição</button>
+                        </div>
+                        <div id="role-distribution" class="distribution-result"></div>
+                    </div>
+                </div>
+
+                <!-- Coach -->
+                <div class="role-card">
+                    <div class="role-header">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Coach</h3>
+                    </div>
+                    
+                    <div class="role-description">
+                        <p>O Coach é responsável por facilitar o processo e garantir que a equipe siga as práticas XP. Atua como um mentor técnico e facilitador do processo, removendo impedimentos e promovendo a melhoria contínua.</p>
+                    </div>
+
+                    <div class="responsibilities">
+                        <h4>Responsabilidades Principais</h4>
+                        <ul>
+                            <li>Facilitar reuniões de planejamento e retrospectivas</li>
+                            <li>Ensinar e promover práticas XP na equipe</li>
+                            <li>Remover impedimentos técnicos e organizacionais</li>
+                            <li>Monitorar métricas de qualidade e produtividade</li>
+                            <li>Configurar e manter ferramentas de desenvolvimento</li>
+                            <li>Orientar pair programming e revisões de código</li>
+                            <li>Gerenciar riscos técnicos do projeto</li>
+                            <li>Promover comunicação efetiva na equipe</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-activities">
+                        <h4>Atividades Associadas</h4>
+                        <div class="activities-grid">
+                            <div class="activity-tag planejamento">Definição de Tarefas</div>
+                            <div class="activity-tag desenvolvimento">Integração Contínua</div>
+                            <div class="activity-tag implantacao">Deploy Contínuo</div>
+                            <div class="activity-tag reflexao">Retrospectiva da Iteração</div>
+                            <div class="activity-tag gerencia">Monitoramento do Progresso</div>
+                            <div class="activity-tag gerencia">Gestão de Riscos</div>
+                            <div class="activity-tag gerencia">Controle de Qualidade</div>
+                        </div>
+                    </div>
+
+                    <div class="competencies">
+                        <h4>Competências Necessárias</h4>
+                        <div class="competencies-grid">
+                            <div class="competency-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Conhecimento técnico sólido</span>
+                            </div>
+                            <div class="competency-item">
+                                <i class="fas fa-comments"></i>
+                                <span>Habilidades de comunicação</span>
+                            </div>
+                            <div class="competency-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Capacidade de resolver problemas</span>
+                            </div>
+                            <div class="competency-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Experiência em mentoria</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer -->
+                <div class="role-card">
+                    <div class="role-header">
+                        <i class="fas fa-user-friends"></i>
+                        <h3>Customer</h3>
+                    </div>
+                    
+                    <div class="role-description">
+                        <p>O Customer representa os interesses dos usuários finais e stakeholders. É responsável por definir os requisitos, priorizar funcionalidades e validar as entregas, garantindo que o produto atenda às necessidades reais.</p>
+                    </div>
+
+                    <div class="responsibilities">
+                        <h4>Responsabilidades Principais</h4>
+                        <ul>
+                            <li>Escrever e manter histórias de usuário</li>
+                            <li>Definir critérios de aceitação claros</li>
+                            <li>Priorizar backlog baseado em valor de negócio</li>
+                            <li>Participar de testes de aceitação</li>
+                            <li>Fornecer feedback contínuo sobre entregas</li>
+                            <li>Tomar decisões sobre escopo e funcionalidades</li>
+                            <li>Comunicar com stakeholders externos</li>
+                            <li>Validar se o produto atende aos objetivos</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-activities">
+                        <h4>Atividades Associadas</h4>
+                        <div class="activities-grid">
+                            <div class="activity-tag planejamento">Coleta de Histórias de Usuário</div>
+                            <div class="activity-tag planejamento">Estimativa e Priorização</div>
+                            <div class="activity-tag planejamento">Planejamento da Release</div>
+                            <div class="activity-tag testes">Testes de Aceitação</div>
+                            <div class="activity-tag testes">Testes de Sistema</div>
+                            <div class="activity-tag implantacao">Demonstração ao Cliente</div>
+                            <div class="activity-tag implantacao">Coleta de Feedback</div>
+                            <div class="activity-tag gerencia">Comunicação com Stakeholders</div>
+                        </div>
+                    </div>
+
+                    <div class="competencies">
+                        <h4>Competências Necessárias</h4>
+                        <div class="competencies-grid">
+                            <div class="competency-item">
+                                <i class="fas fa-eye"></i>
+                                <span>Visão de negócio</span>
+                            </div>
+                            <div class="competency-item">
+                                <i class="fas fa-users"></i>
+                                <span>Conhecimento dos usuários</span>
+                            </div>
+                            <div class="competency-item">
+                                <i class="fas fa-balance-scale"></i>
+                                <span>Capacidade de priorização</span>
+                            </div>
+                            <div class="competency-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>Habilidades de negociação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Developers -->
+                <div class="role-card">
+                    <div class="role-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Developers</h3>
+                    </div>
+                    
+                    <div class="role-description">
+                        <p>Os Developers são responsáveis por toda a implementação técnica do software. Trabalham em pares, seguem práticas de qualidade e são coletivamente responsáveis pela arquitetura, código e testes do sistema.</p>
+                    </div>
+
+                    <div class="responsibilities">
+                        <h4>Responsabilidades Principais</h4>
+                        <ul>
+                            <li>Implementar funcionalidades seguindo TDD</li>
+                            <li>Participar de pair programming</li>
+                            <li>Escrever e manter testes automatizados</li>
+                            <li>Refatorar código continuamente</li>
+                            <li>Estimar esforço de histórias e tarefas</li>
+                            <li>Decompor histórias em tarefas técnicas</li>
+                            <li>Integrar código frequentemente</li>
+                            <li>Manter arquitetura simples e limpa</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-activities">
+                        <h4>Atividades Associadas</h4>
+                        <div class="activities-grid">
+                            <div class="activity-tag planejamento">Estimativa e Priorização</div>
+                            <div class="activity-tag planejamento">Definição de Tarefas</div>
+                            <div class="activity-tag desenvolvimento">Pair Programming</div>
+                            <div class="activity-tag desenvolvimento">Test-Driven Development</div>
+                            <div class="activity-tag desenvolvimento">Integração Contínua</div>
+                            <div class="activity-tag desenvolvimento">Refatoração</div>
+                            <div class="activity-tag testes">Testes de Unidade</div>
+                            <div class="activity-tag testes">Testes de Integração</div>
+                            <div class="activity-tag implantacao">Deploy Contínuo</div>
+                            <div class="activity-tag implantacao">Monitoramento Pós-Deploy</div>
+                        </div>
+                    </div>
+
+                    <div class="competencies">
+                        <h4>Competências Necessárias</h4>
+                        <div class="competencies-grid">
+                            <div class="competency-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Habilidades de programação</span>
+                            </div>
+                            <div class="competency-item">
+                                <i class="fas fa-vial"></i>
+                                <span>Conhecimento em testes</span>
+                            </div>
+                            <div class="competency-item">
+                                <i class="fas fa-people-arrows"></i>
+                                <span>Trabalho colaborativo</span>
+                            </div>
+                            <div class="competency-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>Pensamento arquitetural</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Matriz de Responsabilidades -->
+                <div class="responsibility-matrix">
+                    <h3><i class="fas fa-table"></i> Matriz RACI de Responsabilidades</h3>
+                    <div class="matrix-description">
+                        <p><strong>R</strong> = Responsável | <strong>A</strong> = Aprovador | <strong>C</strong> = Consultado | <strong>I</strong> = Informado</p>
+                    </div>
+                    
+                    <div class="matrix-container">
+                        <table class="raci-matrix">
+                            <thead>
+                                <tr>
+                                    <th>Atividade</th>
+                                    <th>Coach</th>
+                                    <th>Customer</th>
+                                    <th>Developers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Coleta de Histórias</td>
+                                    <td class="consulted">C</td>
+                                    <td class="responsible">R</td>
+                                    <td class="consulted">C</td>
+                                </tr>
+                                <tr>
+                                    <td>Estimativa</td>
+                                    <td class="informed">I</td>
+                                    <td class="consulted">C</td>
+                                    <td class="responsible">R</td>
+                                </tr>
+                                <tr>
+                                    <td>Priorização</td>
+                                    <td class="consulted">C</td>
+                                    <td class="responsible">R</td>
+                                    <td class="informed">I</td>
+                                </tr>
+                                <tr>
+                                    <td>Pair Programming</td>
+                                    <td class="consulted">C</td>
+                                    <td class="informed">I</td>
+                                    <td class="responsible">R</td>
+                                </tr>
+                                <tr>
+                                    <td>TDD</td>
+                                    <td class="consulted">C</td>
+                                    <td class="informed">I</td>
+                                    <td class="responsible">R</td>
+                                </tr>
+                                <tr>
+                                    <td>Testes de Aceitação</td>
+                                    <td class="informed">I</td>
+                                    <td class="responsible">R</td>
+                                    <td class="consulted">C</td>
+                                </tr>
+                                <tr>
+                                    <td>Deploy</td>
+                                    <td class="consulted">C</td>
+                                    <td class="informed">I</td>
+                                    <td class="responsible">R</td>
+                                </tr>
+                                <tr>
+                                    <td>Demonstração</td>
+                                    <td class="consulted">C</td>
+                                    <td class="responsible">R</td>
+                                    <td class="responsible">R</td>
+                                </tr>
+                                <tr>
+                                    <td>Retrospectiva</td>
+                                    <td class="responsible">R</td>
+                                    <td class="consulted">C</td>
+                                    <td class="consulted">C</td>
+                                </tr>
+                                <tr>
+                                    <td>Monitoramento</td>
+                                    <td class="responsible">R</td>
+                                    <td class="informed">I</td>
+                                    <td class="consulted">C</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Características da Equipe XP -->
+                <div class="team-characteristics">
+                    <h3><i class="fas fa-heart"></i> Características da Equipe XP</h3>
+                    
+                    <div class="characteristics-grid">
+                        <div class="characteristic-item">
+                            <i class="fas fa-users"></i>
+                            <h4>Pequena e Coesa</h4>
+                            <p>Equipes de 3-8 pessoas que trabalham em proximidade física ou virtual</p>
+                        </div>
+                        
+                        <div class="characteristic-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <h4>Auto-organizável</h4>
+                            <p>Membros decidem coletivamente como realizar o trabalho</p>
+                        </div>
+                        
+                        <div class="characteristic-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h4>Multifuncional</h4>
+                            <p>Todos os membros podem contribuir em diferentes aspectos do projeto</p>
+                        </div>
+                        
+                        <div class="characteristic-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Aprendizado Contínuo</h4>
+                            <p>Comprometida com crescimento técnico e pessoal constante</p>
+                        </div>
+                        
+                        <div class="characteristic-item">
+                            <i class="fas fa-bullseye"></i>
+                            <h4>Foco no Cliente</h4>
+                            <p>Orientada a entregar valor real para o usuário final</p>
+                        </div>
+                        
+                        <div class="characteristic-item">
+                            <i class="fas fa-balance-scale"></i>
+                            <h4>Responsabilidade Coletiva</h4>
+                            <p>Todos são responsáveis pela qualidade e sucesso do produto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diretrizes para Formação da Equipe -->
+                <div class="team-guidelines">
+                    <h3><i class="fas fa-lightbulb"></i> Diretrizes para Formação da Equipe</h3>
+                    
+                    <div class="guidelines-content">
+                        <div class="guideline-section">
+                            <h4>Tamanho Ideal</h4>
+                            <ul>
+                                <li><strong>3-5 pessoas:</strong> Ideal para projetos acadêmicos</li>
+                                <li><strong>6-8 pessoas:</strong> Máximo recomendado para manter comunicação efetiva</li>
+                                <li><strong>2 pessoas:</strong> Mínimo absoluto (1 Developer + 1 Customer/Coach)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guideline-section">
+                            <h4>Distribuição de Papéis</h4>
+                            <ul>
+                                <li>Em equipes pequenas (≤3), membros assumem múltiplos papéis</li>
+                                <li>Sempre ter pelo menos 1 pessoa focada no papel de Customer</li>
+                                <li>Coach pode ser compartilhado entre múltiplas equipes</li>
+                                <li>Todos os membros participam como Developers</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="guideline-section">
+                            <h4>Competências Mínimas</h4>
+                            <ul>
+                                <li>Pelo menos 50% da equipe com experiência técnica</li>
+                                <li>Pelo menos 1 pessoa com conhecimento do domínio</li>
+                                <li>Pelo menos 1 pessoa com experiência em testes</li>
+                                <li>Disposição para aprender e aplicar práticas XP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Contexto Acadêmico</h3>
+                    <p>Desenvolvido para a disciplina de Processo de Desenvolvimento de Software</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-code"></i> Tecnologias</h3>
+                    <p>HTML5, CSS3, JavaScript e GitHub Pages</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-calendar"></i> Ano</h3>
+                    <p>2025</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Processo XP Corporativo - PDS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

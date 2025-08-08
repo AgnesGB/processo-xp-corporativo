@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama do Processo - XP Corporativo</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code-branch"></i>
+                XP Corporativo
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="diagrama.html" class="nav-link active">Diagrama</a>
+                </li>
+                <li class="nav-item">
+                    <a href="atividades.html" class="nav-link">Atividades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="papeis.html" class="nav-link">Papéis</a>
+                </li>
+                <li class="nav-item">
+                    <a href="praticas.html" class="nav-link">Práticas</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1><i class="fas fa-sitemap"></i> Diagrama do Processo XP</h1>
+                <p class="hero-subtitle">Fluxo completo das atividades e ciclo de vida do processo</p>
+            </div>
+        </section>
+
+        <section class="diagram-section">
+            <div class="container">
+                <h2><i class="fas fa-project-diagram"></i> Ciclo de Vida do Processo XP Corporativo</h2>
+                
+                <div class="diagram-description">
+                    <p>O diagrama abaixo apresenta o fluxo completo do Processo XP Corporativo, mostrando as 5 fases principais e suas interações. O processo é iterativo e incremental, com ciclos de 1-2 semanas.</p>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="mermaid">
+                        graph TD
+                            A[Início do Projeto] --> B[Planejamento da Release]
+                            B --> C[Planejamento da Iteração]
+                            
+                            subgraph Iteração["🔄 Iteração (1-2 semanas)"]
+                                C --> D[Coleta de Histórias]
+                                D --> E[Estimativa e Priorização]
+                                E --> F[Definição de Tarefas]
+                                
+                                F --> G[Desenvolvimento]
+                                G --> H[Pair Programming]
+                                H --> I[Test-Driven Development]
+                                I --> J[Integração Contínua]
+                                J --> K[Refatoração]
+                                
+                                K --> L[Testes]
+                                L --> M[Testes de Unidade]
+                                M --> N[Testes de Aceitação]
+                                N --> O[Testes de Sistema]
+                                
+                                O --> P[Implantação]
+                                P --> Q[Deploy Contínuo]
+                                Q --> R[Entrega ao Cliente]
+                                
+                                R --> S[Reflexão]
+                                S --> T[Retrospectiva]
+                                T --> U[Planejamento de Melhorias]
+                            end
+                            
+                            U --> V{Fim da Release?}
+                            V -->|Não| C
+                            V -->|Sim| W[Release Final]
+                            W --> X[Documentação Final]
+                            X --> Y[Entrega do Projeto]
+                            
+                            subgraph Atividades_Gerencia["👥 Atividades de Gerência (Contínuas)"]
+                                Z1[Monitoramento do Progresso]
+                                Z2[Gestão de Riscos]
+                                Z3[Comunicação com Stakeholders]
+                                Z4[Controle de Qualidade]
+                            end
+                            
+                            C -.-> Z1
+                            G -.-> Z2
+                            L -.-> Z4
+                            R -.-> Z3
+                            
+                            classDef planejamento fill:#e1f5fe
+                            classDef desenvolvimento fill:#f3e5f5
+                            classDef testes fill:#e8f5e8
+                            classDef implantacao fill:#fff3e0
+                            classDef reflexao fill:#fce4ec
+                            classDef gerencia fill:#f5f5f5
+                            
+                            class C,D,E,F planejamento
+                            class G,H,I,J,K desenvolvimento
+                            class L,M,N,O testes
+                            class P,Q,R implantacao
+                            class S,T,U reflexao
+                            class Z1,Z2,Z3,Z4 gerencia
+                    </div>
+                </div>
+
+                <div class="diagram-legend">
+                    <h3><i class="fas fa-info-circle"></i> Legenda do Diagrama</h3>
+                    <div class="legend-grid">
+                        <div class="legend-item planejamento">
+                            <div class="legend-color"></div>
+                            <span>Planejamento</span>
+                        </div>
+                        <div class="legend-item desenvolvimento">
+                            <div class="legend-color"></div>
+                            <span>Desenvolvimento</span>
+                        </div>
+                        <div class="legend-item testes">
+                            <div class="legend-color"></div>
+                            <span>Testes</span>
+                        </div>
+                        <div class="legend-item implantacao">
+                            <div class="legend-color"></div>
+                            <span>Implantação</span>
+                        </div>
+                        <div class="legend-item reflexao">
+                            <div class="legend-color"></div>
+                            <span>Reflexão</span>
+                        </div>
+                        <div class="legend-item gerencia">
+                            <div class="legend-color"></div>
+                            <span>Gerência</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-phases">
+                    <h3><i class="fas fa-layer-group"></i> Detalhamento das Fases</h3>
+                    
+                    <div class="phases-detail">
+                        <div class="phase-detail planejamento">
+                            <h4><i class="fas fa-clipboard-list"></i> Fase 1: Planejamento</h4>
+                            <p><strong>Duração:</strong> 1-2 dias por iteração</p>
+                            <p><strong>Objetivo:</strong> Definir o que será desenvolvido na iteração atual</p>
+                            <ul>
+                                <li>Coleta e refinamento de histórias de usuário</li>
+                                <li>Estimativa de esforço usando Planning Poker</li>
+                                <li>Priorização baseada em valor de negócio</li>
+                                <li>Decomposição em tarefas técnicas</li>
+                            </ul>
+                        </div>
+
+                        <div class="phase-detail desenvolvimento">
+                            <h4><i class="fas fa-code"></i> Fase 2: Desenvolvimento</h4>
+                            <p><strong>Duração:</strong> 60-70% da iteração</p>
+                            <p><strong>Objetivo:</strong> Implementar as funcionalidades com alta qualidade</p>
+                            <ul>
+                                <li>Programação em pares (Pair Programming)</li>
+                                <li>Desenvolvimento orientado a testes (TDD)</li>
+                                <li>Integração contínua com testes automatizados</li>
+                                <li>Refatoração constante do código</li>
+                            </ul>
+                        </div>
+
+                        <div class="phase-detail testes">
+                            <h4><i class="fas fa-vial"></i> Fase 3: Testes</h4>
+                            <p><strong>Duração:</strong> Paralela ao desenvolvimento</p>
+                            <p><strong>Objetivo:</strong> Garantir a qualidade e funcionalidade do software</p>
+                            <ul>
+                                <li>Testes de unidade automatizados</li>
+                                <li>Testes de aceitação com o cliente</li>
+                                <li>Testes de integração e sistema</li>
+                                <li>Validação de critérios de aceitação</li>
+                            </ul>
+                        </div>
+
+                        <div class="phase-detail implantacao">
+                            <h4><i class="fas fa-rocket"></i> Fase 4: Implantação</h4>
+                            <p><strong>Duração:</strong> 1 dia por iteração</p>
+                            <p><strong>Objetivo:</strong> Entregar software funcionando ao cliente</p>
+                            <ul>
+                                <li>Deploy automatizado em ambiente de produção</li>
+                                <li>Demonstração das funcionalidades ao cliente</li>
+                                <li>Coleta de feedback imediato</li>
+                                <li>Monitoramento pós-deploy</li>
+                            </ul>
+                        </div>
+
+                        <div class="phase-detail reflexao">
+                            <h4><i class="fas fa-thought-bubble"></i> Fase 5: Reflexão</h4>
+                            <p><strong>Duração:</strong> 0.5-1 dia por iteração</p>
+                            <p><strong>Objetivo:</strong> Melhorar continuamente o processo e a equipe</p>
+                            <ul>
+                                <li>Retrospectiva da iteração</li>
+                                <li>Identificação de pontos de melhoria</li>
+                                <li>Planejamento de ações corretivas</li>
+                                <li>Atualização das práticas da equipe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-characteristics">
+                    <h3><i class="fas fa-cogs"></i> Características do Fluxo</h3>
+                    
+                    <div class="characteristics-grid">
+                        <div class="characteristic-card">
+                            <i class="fas fa-sync-alt"></i>
+                            <h4>Iterativo</h4>
+                            <p>O processo se repete em ciclos curtos, permitindo adaptação rápida às mudanças</p>
+                        </div>
+                        
+                        <div class="characteristic-card">
+                            <i class="fas fa-plus"></i>
+                            <h4>Incremental</h4>
+                            <p>Cada iteração adiciona funcionalidades ao produto, construindo valor progressivamente</p>
+                        </div>
+                        
+                        <div class="characteristic-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Colaborativo</h4>
+                            <p>Comunicação intensa entre equipe e cliente durante todo o processo</p>
+                        </div>
+                        
+                        <div class="characteristic-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Qualidade</h4>
+                            <p>Práticas técnicas garantem alta qualidade do código e do produto</p>
+                        </div>
+                        
+                        <div class="characteristic-card">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <h4>Rápido</h4>
+                            <p>Entregas frequentes e feedback rápido aceleram o desenvolvimento</p>
+                        </div>
+                        
+                        <div class="characteristic-card">
+                            <i class="fas fa-arrows-spin"></i>
+                            <h4>Adaptável</h4>
+                            <p>Capacidade de responder rapidamente a mudanças de requisitos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metrics-section">
+                    <h3><i class="fas fa-chart-bar"></i> Métricas de Acompanhamento</h3>
+                    
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <i class="fas fa-clock"></i>
+                            <h4>Velocity</h4>
+                            <p>Pontos de história entregues por iteração</p>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <i class="fas fa-bug"></i>
+                            <h4>Taxa de Defeitos</h4>
+                            <p>Número de bugs encontrados vs. histórias entregues</p>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <i class="fas fa-percentage"></i>
+                            <h4>Cobertura de Testes</h4>
+                            <p>Percentual do código coberto por testes automatizados</p>
+                        </div>
+                        
+                        <div class="metric-card">
+                            <i class="fas fa-thumbs-up"></i>
+                            <h4>Satisfação do Cliente</h4>
+                            <p>Avaliação do cliente sobre as entregas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Contexto Acadêmico</h3>
+                    <p>Desenvolvido para a disciplina de Processo de Desenvolvimento de Software</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-code"></i> Tecnologias</h3>
+                    <p>HTML5, CSS3, JavaScript e GitHub Pages</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-calendar"></i> Ano</h3>
+                    <p>2025</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Processo XP Corporativo - PDS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
