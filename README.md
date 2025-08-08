@@ -1,6 +1,6 @@
 # Processo XP Corporativo
 
-Este repositório contém o código-fonte do site que documenta o **Processo XP Corporativo**, um processo ágil baseado em Extreme Programming (XP) desenvolvido especificamente para a disciplina de PDS (Processo de Desenvolvimento de Software) Corporativo.
+Este repositório contém o código-fonte do site que documenta o **Processo XP Corporativo**, um processo ágil baseado em Extreme Programming (XP) desenvolvido especificamente para a disciplina de Processo de Software Corporativo.
 
 ## 🚀 Acesso ao Site
 
@@ -169,7 +169,7 @@ O processo inclui 4 métricas principais:
 - **Cobertura de Testes**: Percentual do código testado
 - **Satisfação do Cliente**: Avaliação das entregas
 
-## 🎯 Aplicação no PDS Corporativo
+## 🎯 Aplicação em Processo de Software Corporativo
 
 Este processo foi desenvolvido especificamente para:
 
@@ -201,12 +201,17 @@ O processo segue um ciclo iterativo e incremental:
 
 ## 👨‍🎓 Contexto Acadêmico
 
-Este trabalho foi desenvolvido como parte da disciplina de **Processo de Desenvolvimento de Software**, demonstrando:
+Este trabalho foi desenvolvido como parte da disciplina de **Processo de Software**, demonstrando:
 
 - Conhecimento de metodologias ágeis
 - Capacidade de adaptar processos ao contexto
 - Habilidades de documentação e apresentação
 - Uso de tecnologias web modernas
+
+## 👥 Equipe
+
+- **Agnes G Barbosa**
+- **Nathan C Lima**
 
 ## 📄 Licença
 
@@ -218,4 +223,5 @@ Sugestões e melhorias são bem-vindas! Abra uma issue ou envie um pull request.
 
 ---
 
-**Desenvolvido para PDS Corporativo - 2025**
+**Desenvolvido para Processo de Software - 2025**
+**Equipe: Agnes G Barbosa e Nathan C Lima**

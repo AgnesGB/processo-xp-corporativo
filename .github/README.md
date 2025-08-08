@@ -1,10 +1,8 @@
 # Processo XP Corporativo
 
-Site com documentação completa do processo ágil baseado em Extreme Programming para PDS Corporativo.
+Site com documentação completa do processo ágil baseado em Extreme Programming para Processo de Software Corporativo.
 
 ## Visite o site: [Processo XP Corporativo](https://agnesgb.github.io/processo-xp-corporativo/)
-
-![Preview do Site](preview.png)
 
 ### Conteúdo
 - Diagrama do processo completo
@@ -14,4 +12,5 @@ Site com documentação completa do processo ágil baseado em Extreme Programmin
 - Calculadora de distribuição de papéis
 - Guias de implementação
 
-Desenvolvido para a disciplina de Processo de Desenvolvimento de Software.
+**Equipe:** Agnes G Barbosa e Nathan C Lima  
+Desenvolvido para a disciplina de Processo de Software.
