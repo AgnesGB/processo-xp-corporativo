@@ -2,7 +2,7 @@
 
 Site com documentação completa do processo ágil baseado em Extreme Programming para PDS Corporativo.
 
-## Visite o site: [Processo XP Corporativo](https://seuusuario.github.io/processo-xp-corporativo/)
+## Visite o site: [Processo XP Corporativo](https://agnesgb.github.io/processo-xp-corporativo/)
 
 ![Preview do Site](preview.png)
 

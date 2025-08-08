@@ -6,7 +6,7 @@ Este repositório contém o código-fonte do site que documenta o **Processo XP 
 
 O site com toda a documentação do processo está disponível no GitHub Pages:
 
-➡️ **[Acesse o site do Processo XP Corporativo aqui!](https://seuusuario.github.io/processo-xp-corporativo/)**
+➡️ **[Acesse o site do Processo XP Corporativo aqui!](https://agnesgb.github.io/processo-xp-corporativo/)**
 
 ## 📖 Sobre o Processo
 
